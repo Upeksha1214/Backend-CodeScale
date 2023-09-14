@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const User = require('./userModel');
-const getWeatherData = require('./weatherAPI');
+const User = require('../module/userModel');
+const getWeatherData = require('../weatherAPI');
 
 // Route to store user details
 router.post('/users', async (req, res) => {

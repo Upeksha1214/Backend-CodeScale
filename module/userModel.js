@@ -1,5 +1,5 @@
 const User = require('./userModel');
-const getWeatherData = require('./weatherAPI');
+const getWeatherData = require('../weatherAPI');
 
 async function createUserWithWeatherData() {
   try {
