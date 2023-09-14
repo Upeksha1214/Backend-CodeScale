@@ -28,5 +28,16 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-nodejs-weather-app.git
-   cd your-nodejs-weather-app
+   git clone https://github.com/you# Node.js Weather Report App
+
+This Node.js module provides a simple way to fetch weather data from an API and send hourly weather reports to users' emails every 3 hours.
+
+## Installation
+
+You can install the Node.js Weather Report App using npm:
+
+```bash
+npm install node-weather-report-app
+r-username/your-nodejs-weather-app.git
+   cd your-nodejs-weather-app ```bash
+
