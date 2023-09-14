@@ -32,7 +32,7 @@ To get started with this project, follow these steps:
 
 This Node.js module provides a simple way to fetch weather data from an API and send hourly weather reports to users' emails every 3 hours.
 
-## Installation
+
 
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
