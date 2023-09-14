@@ -1,27 +1,21 @@
 const express = require('express');
-const mongoose=require('mongoose')
-
-const cors = require('cors')
-require('dotenv').config()
-
 const app = express();
-const port = process.env.PORT || 3000;
+const mongoose = require('mongoose');
+const routes = require('./routes');
+
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost/user', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
 
 app.use(express.json());
-app.use(cors());
 
-const url=process.env.MONGO_URL
-mongoose.connect(url,{useNewUrlParser : true})
-const con=mongoose.connection
+// Use the routes
+app.use('/', routes);
 
-con.on("open",()=>{
-    console.log('monogoDB connected..!')
-})
-
-// app.get('/', (req, res) => {
-//   res.send('Hello, Express!');
-// });
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
